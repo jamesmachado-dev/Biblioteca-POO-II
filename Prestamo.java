@@ -4,7 +4,7 @@ public class Prestamo {
     private String idPrestamo;
     private LocalDate fechaPrestamo;
     private LocalDate fechaDevolucion;
-    private Libro libro; // Asociación
+    private Libro libro; 
 
     public Prestamo(String idPrestamo, LocalDate fechaPrestamo, LocalDate fechaDevolucion, Libro libro) {
         this.idPrestamo = idPrestamo;

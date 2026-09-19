@@ -6,10 +6,10 @@ public class Main {
         System.out.println("   SISTEMA DE GESTION DE BIBLIOTECA - DEMO EA2   ");
         System.out.println("=================================================\n");
 
-        // 1. CREACIÓN DE AUTORES Y LIBROS (Demostrando Agregación y Herencia)
+        // 1. CREACIÓN DE AUTORES Y LIBROS 
         Autor autor1 = new Autor("AUT-01", "Gabriel García Márquez", "Colombiana");
         
-        // Libro Digital (Subclase que hereda de Libro)
+        // Libro Digital 
         LibroDigital libroDigital = new LibroDigital(
             "978-0307474728", 
             "Cien Años de Soledad", 
@@ -21,11 +21,11 @@ public class Main {
         // Libro Físico / Estándar
         Libro libroFisico = new Libro("978-8437604947", "Don Quijote de la Mancha");
 
-        // Asociar libros a su autor (Agregación)
+        // Asociar libros a su autor 
         autor1.agregarLibro(libroDigital);
         autor1.agregarLibro(libroFisico);
 
-        // 2. CREACIÓN DE USUARIOS (Demostrando Composición con Dirección)
+        // 2. CREACIÓN DE USUARIOS 
         Usuario usuario1 = new Usuario(
             "James", "Machado", "10203040", 
             "Calle 50 #12-30", "Carrera 45", "Medellín", 
@@ -38,7 +38,7 @@ public class Main {
             "USR-002", "3159876543"
         );
 
-        // 3. REGISTRO DE PRÉSTAMOS (Demostrando Asociación)
+        // 3. REGISTRO DE PRÉSTAMOS 
         System.out.println("--- REGISTRANDO PRÉSTAMOS ---");
         
         // Préstamo 1: Libro Digital a Usuario 1
