@@ -27,7 +27,7 @@ public class Main {
 
         // 2. CREACIÓN DE USUARIOS (Demostrando Composición con Dirección)
         Usuario usuario1 = new Usuario(
-            "Carlos", "Pérez", "10203040", 
+            "James", "Machado", "10203040", 
             "Calle 50 #12-30", "Carrera 45", "Medellín", 
             "USR-001", "3001234567"
         );
