@@ -8,7 +8,7 @@ public abstract class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
-        // Composición: la dirección se instancia directamente aquí
+
         this.direccion = new Direccion(calle, carrera, ciudad);
     }
 
