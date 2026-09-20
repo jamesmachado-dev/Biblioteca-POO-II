@@ -1,7 +1,7 @@
 public class Libro {
-    private String isbn;
-    private String titulo;
-    private EstadoLibro estado;
+    protected String isbn;
+    protected String titulo;
+    protected EstadoLibro estado;
 
     public Libro(String isbn, String titulo) {
         this.isbn = isbn;
@@ -11,6 +11,14 @@ public class Libro {
 
     public boolean estaDisponible() {
         return this.estado == EstadoLibro.DISPONIBLE;
+    }
+
+    public void prestar() {
+        this.estado = EstadoLibro.PRESTADO;
+    }
+
+    public void devolver() {
+        this.estado = EstadoLibro.DISPONIBLE;
     }
 
     public String getIsbn() { return isbn; }

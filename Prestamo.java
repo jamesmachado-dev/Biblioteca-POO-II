@@ -11,7 +11,6 @@ public class Prestamo {
         this.fechaPrestamo = fechaPrestamo;
         this.fechaDevolucion = fechaDevolucion;
         this.libro = libro;
-        this.libro.setEstado(EstadoLibro.PRESTADO);
     }
 
     public boolean estaVencido() {

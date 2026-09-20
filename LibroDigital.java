@@ -14,10 +14,19 @@ public class LibroDigital extends Libro {
     // Aca se cumple el requisito: Sobrescritura de método (@Override) ---
     @Override
     public boolean estaDisponible() {
-        return true; 
+        return this.estado != EstadoLibro.EN_REPARACION;
     }
 
+    @Override
+    public void prestar() {
+        // Copias ilimitadas: prestarlo no agota el ejemplar
+    }
 
+    @Override
+    public void devolver() {
+    }
+
+    // --- SOBRECARGA: mismo nombre pero otra firma ---
     public void descargar() {
         System.out.println("Descargando libro digital desde: " + urlDescarga);
     }
@@ -30,7 +39,4 @@ public class LibroDigital extends Libro {
     public String getFormato() { return formato; }
     public void setFormato(String formato) { this.formato = formato; }
     public double getTamanioMB() { return tamanioMB; }
-    public void setTamanioMB(double tamanioMB) { this.tamanioMB = tamanioMB; }
-    public String getUrlDescarga() { return urlDescarga; }
-    public void setUrlDescarga(String urlDescarga) { this.urlDescarga = urlDescarga; }
 }

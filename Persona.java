@@ -1,14 +1,13 @@
 public abstract class Persona {
-    private String nombre;
-    private String apellido;
-    private String documento;
+    protected String nombre;
+    protected String apellido;
+    protected String documento;
     private Direccion direccion; // Composición
 
     public Persona(String nombre, String apellido, String documento, String calle, String carrera, String ciudad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
-
         this.direccion = new Direccion(calle, carrera, ciudad);
     }
 

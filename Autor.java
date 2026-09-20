@@ -15,11 +15,13 @@ public class Autor {
     }
 
     public void agregarLibro(Libro libro) {
-        this.libros.add(libro);
+        if (libro != null && !libros.contains(libro)) {
+            libros.add(libro);
+        }
     }
 
     public void quitarLibro(Libro libro) {
-        this.libros.remove(libro);
+        libros.remove(libro);
     }
 
     public String getIdAutor() { return idAutor; }
